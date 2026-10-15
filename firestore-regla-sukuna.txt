@@ -1,0 +1,7 @@
+match /sr_7f3k9v_sukuna_reports/{userId} {
+  allow read, write: if request.auth != null && request.auth.uid == userId;
+
+  match /{subcollection}/{document=**} {
+    allow read, write: if request.auth != null && request.auth.uid == userId;
+  }
+}

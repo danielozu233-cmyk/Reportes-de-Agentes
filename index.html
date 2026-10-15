@@ -77,7 +77,7 @@
 (()=>{
   if(!window.firebase){document.querySelector('#loginMessage').textContent='No se pudo cargar Firebase. Revisa tu conexión e intenta recargar la página.';return}
   const $=s=>document.querySelector(s), fmt=new Intl.NumberFormat('es-GT'), MONTHS=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
-  const firebaseConfig={apiKey:'AIzaSyABh4S-FR5amDK8fem-Z1t_dXn3tbRDdC8',authDomain:'lmsupana.firebaseapp.com',projectId:'lmsupana',storageBucket:'lmsupana.firebasestorage.app',messagingSenderId:'912778300770',appId:'1:912778300770:web:84be7166f1620ac8e6303b',measurementId:'G-Z2PMT4KGJ0'};
+  const firebaseConfig={apiKey:'AIzaSyCKrf4w-Djjrj2wAjgvaRauADxfcQWp5Do',authDomain:'tallerggalvez.firebaseapp.com',projectId:'tallerggalvez',storageBucket:'tallerggalvez.firebasestorage.app',messagingSenderId:'760556347227',appId:'1:760556347227:web:78f0fb1ff89cc37133447e',measurementId:'G-EVT5M54BXN'};
   const firebaseApp=firebase.apps.length?firebase.app():firebase.initializeApp(firebaseConfig),auth=firebaseApp.auth(),db=firebaseApp.firestore();
   const reportCollection='sr_7f3k9v_sukuna_reports',uploadCollection='bl_4m2x8p_books',rowCollection='rw_8q1c6n_rows',noteCollection='nt_5z9k2x_daynotes',legacyAnnotationKey='pulse-agent-report-day-notes-v1';
   let records=[],fileName='reporte',activeAgent='',calendarMonth='',selectedDayKey='',editingExemptionKey='',annotationStorageKey='',dayAnnotations={},authUser=null,authLoading=false;
